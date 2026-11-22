@@ -1,4 +1,9 @@
-USE sql_assignment;
+DROP DATABASE IF EXISTS sql_week01_assignment;
+
+CREATE DATABASE IF NOT EXISTS sql_week01_assignment;
+
+use sql_week01_assignment;
+
 
 CREATE TABLE
     IF NOT EXISTS employee_reports (
