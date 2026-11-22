@@ -1,0 +1,19 @@
+USE sql_week01_assignment;
+
+SELECT
+    CASE
+        WHEN MOD(id, 2) = 1
+        AND id = (
+            SELECT
+                MAX(id)
+            FROM
+                seat
+        ) THEN id
+        WHEN MOD(id, 2) = 1 THEN id + 1
+        ELSE id - 1
+    END AS id,
+    student
+FROM
+    seat
+ORDER BY
+    id;
