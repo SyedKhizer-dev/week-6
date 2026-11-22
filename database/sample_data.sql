@@ -1,4 +1,4 @@
-USE sql_assignment;
+USE sql_week01_assignment;
 
 INSERT INTO
     employee_reports (id, name, department, manager_id)
